@@ -32,8 +32,9 @@ int do_pwd(int argc, char** argv) {
 		return 1;
 
 	getcwd(buf, sizeof(buf));
-	printf("%s\n", buf);
-
+	
+	fprintf(stderr, "%s\n", buf);
+	
 	return 0;
 }
 
